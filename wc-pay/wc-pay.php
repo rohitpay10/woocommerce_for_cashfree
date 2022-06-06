@@ -3,7 +3,7 @@
  Plugin Name: Pay10 Gateway for WooCommerce
  Plugin URI: http://www.pay10.com/
  Description: Pay10 PG WooCommerce integration
- Version: 1.0
+ Version: 2.0
  Author: Rohit Kumar Singh <support@pay10.com>
  Author URI: http://www.pay10.com
  */
@@ -42,7 +42,6 @@ function woocommerce_pay_init()
             $this->currency_code        = $this->settings['currency_code'];
             $this->mode                 = $this->settings['mode'];
             $this->merchant_hosted_key = $this->settings['merchant_hosted_key'];
-           // print_r($this->settings['mode']);exit;
 
             if($this->settings['mode']=='no'){
               $this->pg_request_url       = 'https://secure.pay10.com/pgui/jsp/paymentrequest';
